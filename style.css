@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "ladyRadical";
+  src: url("assets/ladyRadical.ttf");
+}
+
+audio{
+  max-width: 100%;
+}
+
+img{
+  image-rendering: pixelated;
+}
+
+body{
+  font-family: "ladyRadical";
+  background-color: #3c4366;
+
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 840px 260px 1fr;
+  grid-template-rows: 120px 480px;
+  grid-template-areas:
+    ". controls upgrades ."
+    ". gameCanvas upgrades .";
+}
+
+.buttonText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#upgrades{
+  grid-area: upgrades;
+
+  margin-top: -4px;
+  border: 4px;
+  border-style: solid;
+  border-color: #2f2b42;
+
+  height: 100%;
+  width: 100%;
+}
+
+  #saveButton{
+    grid-area: upgradeButton;
+
+    margin: 4px 5px;
+    padding: 0px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    position: relative;
+    text-align: center;
+
+    font-family: "ladyRadical";
+    font-size: 16px;
+  }
+
+    #saveButtonImage{
+      width: 250px;
+      height: 28px;
+      vertical-align: middle;
+    }
+
+  .upgradeButton{
+    grid-area: upgradeButton;
+  
+    margin: 4px 5px;
+    padding: 0px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    position: relative;
+    text-align: center;
+
+    font-family: "ladyRadical";
+    font-size: 16px;
+  }
+
+    .upgradeButtonImage{
+      width: 250px;
+      height: 28px;
+      vertical-align: middle;
+    }
+
+#controls{
+  grid-area: controls;
+  justify-self: center;
+  align-self: center;
+
+  border: 4px;
+  border-style: solid;
+  border-color: #2f2b42;
+
+  display: grid;
+  grid-template-columns: 252px 168px 168px 252px;
+  grid-template-rows: 124px;
+  grid-template-areas:
+    "musicPlayer attackBossButton slayMinionButton pointsCounter";
+}
+
+  .specialButton{
+    padding: 0px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    justify-self: center;
+    align-self: center;
+  }
+
+    .specialButton img{
+      width: 160px;
+      height: 100px;
+      vertical-align: middle;
+    }
+
+  #musicPlayer{
+    grid-area: musicPlayer;
+  }
+
+  #attackBossButton{
+    grid-area: attackBossButton;
+  }
+
+  #slayMinionButton{
+    grid-area: slayMinionButton;
+  }
+
+  #pointsCounter{
+    grid-area: pointsCounter;
+    justify-self: center;
+    align-self: center;
+
+    font-size: 32pt;
+  }
+
+#gameCanvas{
+  grid-area: gameCanvas;
+  justify-self: center;
+  align-self: center;
+
+  border: 4px;
+  border-style: solid;
+  border-color: #2f2b42;
+}

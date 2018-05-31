@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zombie Bunny Defence Force</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+  <body>
+    <div id="upgrades">
+      <button id="saveButton"><img id="saveButtonImage" src="assets/saveButton.png"><div class="buttonText">Save Game</div></button>
+    </div>
+    <div id="controls">
+      <audio id="musicPlayer" controls autoplay>
+        <source src="assets/song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <button id="attackBossButton" class="specialButton"><img id="attackBossButtonImage" src="assets/attackButton.png"></button>
+      <button id="slayMinionButton" class="specialButton"><img id="slayMinionButtonImage" src="assets/chargeButton.png"></button>
+      <div id="pointsCounter">Points: 0</div>
+    </div>
+
+    <canvas id="gameCanvas" width="840" height="480"></canvas>
+
+    <script type="text/javascript" src="js/upgrades.js"></script>
+    <script type="text/javascript" src="js/cheaters.js"></script>
+    <script type="text/javascript" src="js/listeners.js"></script>
+    <script type="text/javascript" src="js/gameLogic.js"></script>
+    <script type="text/javascript" src="js/gameDrawing.js"></script>
+    <script type="text/javascript" src="js/gameLoop.js"></script>
+  </body>
+</html>
